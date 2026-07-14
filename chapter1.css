@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    min-height:100vh;
+    background:
+    linear-gradient(
+        rgba(255,240,235,0.85),
+        rgba(255,245,220,0.9)
+    ),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+
+    font-family:'Poppins',sans-serif;
+    color:#6b4050;
+}
+
+
+.chapter{
+
+    text-align:center;
+    padding:50px 20px;
+    overflow:hidden;
+}
+
+
+h2{
+
+    font-family:'Caveat',cursive;
+    font-size:35px;
+    color:#d88b9b;
+}
+
+
+h1{
+
+    font-family:'Caveat',cursive;
+    font-size:55px;
+    margin-bottom:40px;
+    color:#b85c75;
+
+}
+
+
+.memory{
+
+    margin:40px auto;
+    max-width:400px;
+
+    animation:fadeUp 1.5s ease;
+}
+
+
+
+.photo-card{
+
+    background:white;
+    padding:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    transform:rotate(-3deg);
+
+    position:relative;
+}
+
+
+
+.photo-card::before{
+
+    content:"";
+    position:absolute;
+
+    width:80px;
+    height:25px;
+
+    background:#ffd6d6;
+
+    top:-12px;
+    left:40%;
+
+    transform:rotate(-5deg);
+
+}
+
+
+
+.photo-card img{
+
+    width:100%;
+    border-radius:5px;
+
+}
+
+
+
+.memory p{
+
+    margin-top:20px;
+
+    font-family:'Caveat',cursive;
+
+    font-size:28px;
+
+    line-height:1.4;
+
+}
+
+
+
+.arrow{
+
+    font-size:35px;
+    color:#e5a2ad;
+
+    animation:bounce 1.5s infinite;
+
+}
+
+
+
+.continue{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:15px 35px;
+
+    background:#d88b9b;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    box-shadow:0 0 20px rgba(216,139,155,0.6);
+
+    transition:0.3s;
+
+}
+
+
+
+.continue:hover{
+
+    transform:scale(1.08);
+
+    background:#c76580;
+
+}
+
+
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(10px);
+
+    }
+
+}
