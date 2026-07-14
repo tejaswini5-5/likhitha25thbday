@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>That's My Akka ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#F7FBF8,#EEF7F2,#FFFFFF);
+min-height:100vh;
+overflow-x:hidden;
+animation:fadePage 1s ease;
+}
+
+@keyframes fadePage{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Floating Leaves */
+
+.leaf{
+position:fixed;
+font-size:24px;
+opacity:.25;
+animation:float 8s ease-in-out infinite;
+}
+
+.l1{top:8%;left:8%;}
+.l2{top:18%;right:10%;}
+.l3{bottom:12%;left:15%;}
+.l4{bottom:8%;right:12%;}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-18px);
+}
+
+}
+
+.container{
+
+max-width:900px;
+margin:auto;
+padding:70px 25px;
+text-align:center;
+
+}
+
+h1{
+
+font-size:48px;
+color:#446A56;
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+font-size:19px;
+line-height:1.8;
+color:#6D7E74;
+margin-bottom:45px;
+
+}
+
+.photo{
+
+width:330px;
+max-width:90%;
+border-radius:25px;
+padding:12px;
+background:white;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+transition:.4s;
+
+}
+
+.photo:hover{
+
+transform:translateY(-8px) scale(1.02);
+
+}
+
+.caption{
+
+margin-top:20px;
+font-size:18px;
+font-style:italic;
+color:#5A6F62;
+margin-bottom:45px;
+
+}
+
+.message{
+
+background:white;
+padding:45px;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+text-align:left;
+line-height:2;
+font-size:18px;
+color:#555;
+margin-bottom:55px;
+
+}
+
+.message h2{
+
+color:#446A56;
+margin-bottom:20px;
+
+}
+
+.next{
+
+display:inline-block;
+padding:18px 45px;
+background:#7DA88D;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+
+}
+
+.next:hover{
+
+background:#5E8D72;
+transform:scale(1.05);
+
+}
+
+.footer{
+
+margin-top:55px;
+font-size:14px;
+color:#999;
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <iframe 
+src="music.html"
+style="display:none;"
+id="musicFrame">
+</iframe>
+
+<div class="leaf l1">🍃</div>
+<div class="leaf l2">🌿</div>
+<div class="leaf l3">🍃</div>
+<div class="leaf l4">🌿</div>
+
+<div class="container">
+
+<h1>That's My Akka. 🥹❤️</h1>
+
+<p class="subtitle">
+
+Some dreams don't just change one life...
+<br>
+They go on to touch many more.
+
+</p>
+
+<img src="images/doctor1.jpeg" class="photo" alt="Doctor Photo">
+
+<p class="caption">
+
+"I still see my Akka... just with a stethoscope now. 🤍"
+
+</p>
+
+<div class="message">
+
+<h2>Akka...</h2>
+
+<p>
+
+Growing up, I never really understood how much hard work goes into becoming a doctor. But now, seeing you study day and night, handling all the stress, exams, postings, and still keeping that smile... it honestly makes me so proud.
+
+<br><br>
+
+Ik sometimes you doubt yourself, get tired, or feel like giving up. But trust me, you're much stronger than you think.
+
+<br><br>
+
+You're not just studying BAMS. You're learning how to make people feel better, how to help them when they're at their weakest. And I think that's something really special.
+
+<br><br>
+
+Whenever I see you in your scrubs, I can't help but smile. It makes me think...
+
+<br><br>
+
+<b>"That's my Akka." ❤️</b>
+
+<br><br>
+
+I know one day you'll become an amazing doctor—not just because of what you know, but because of the kind heart you have.
+
+<br><br>
+
+No matter how busy life gets or where life takes us, I'll always be the little sister who's proudly telling everyone...
+
+<br><br>
+
+<b>"She's my Akka." 🤍</b>
+
+</p>
+
+</div>
+
+<a class="next" href="ending.html">
+
+✨ One Last Surprise ✨
+
+</a>
+
+<div class="footer">
+
+Made with endless love ❤️
+
+<br>
+
+— Sweety
+
+</div>
+
+</div>
+
+<script src="js/music.js"></script>
+
+</body>
+</html>
